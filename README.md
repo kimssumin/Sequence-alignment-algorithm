@@ -1,4 +1,4 @@
-# <b>Sequence alignment algorithm의 구현(Dynamic programming)</b>
+# <b>🔹 Sequence alignment algorithm의 구현(Dynamic programming)</b>
 
 ## <b>1. Motivation and Objective</b>
 
@@ -47,16 +47,19 @@
 
 - Evaluation method: 이미Sequence분석 결과가 나와있는 서열들을 직접 구현한 코드에 넣어보고 최적의 결과를 찾아내는지 확인한다.
 
-## <b>6. Results</b> 
+## <b>6. Results</b>
+
 > - 구현한 알고리즘은 최적의 alignment 결과를 출력해주며, Protein의 경우 8가지 다른 matrix중에서 가장 좋은 alignment를 선택하여 보여준다.
->- 알고리즘은 이중 for문을 사용하였기 때문에 O(n^2)의 수행시간을 가진다. 
->- 따라서 입력의 크기가 증가할수록 수행시간도 증가한다.
-> <img src="https://user-images.githubusercontent.com/96935132/149460738-bd38d9b0-0b52-44fd-8d53-e54df75f4965.PNG" width="500" height="250"/>
+> - 알고리즘은 이중 for문을 사용하였기 때문에 O(n^2)의 수행시간을 가진다.
+> - 따라서 입력의 크기가 증가할수록 수행시간도 증가한다.
+>   <img src="https://user-images.githubusercontent.com/96935132/149460738-bd38d9b0-0b52-44fd-8d53-e54df75f4965.PNG" width="500" height="250"/>
 
 ## <b>7. Conclusion</b>
-> ### A. Pairwise alignments 
- - 두 서열을 aligning하는 과정은 database similarity searching과 multiple sequence alignment의 기초가 된다. 
- - 고안한 알고리즘은 특정 scoring function이 주어졌을 때 최적의 결과를 보장한다. 
- - 바이오인포메틱스에서 서열 정렬은 DNA, RNA or Protein의 서열을 정렬하는 방법으로 유사성을 지닌 지역을 확인하는 과정이며, 이러한 유사성은 기능, 구조, 진화적인 관계에 의한 결과라고 볼 수 있다.
-> ### B. 수행시간 개선
+
+> ### A. Pairwise alignments
+
+- 두 서열을 aligning하는 과정은 database similarity searching과 multiple sequence alignment의 기초가 된다.
+- 고안한 알고리즘은 특정 scoring function이 주어졌을 때 최적의 결과를 보장한다.
+- 바이오인포메틱스에서 서열 정렬은 DNA, RNA or Protein의 서열을 정렬하는 방법으로 유사성을 지닌 지역을 확인하는 과정이며, 이러한 유사성은 기능, 구조, 진화적인 관계에 의한 결과라고 볼 수 있다.
+  > ### B. 수행시간 개선
 - O(n^2) 수행시간을 가지는 알고리즘의 경우 입력이 매우 커지면 수행시간도 매우 커지게 된다. 따라서 수행시간을 줄일 수 있는 방향으로 알고리즘을 개선하는 것이 향후 과제가 될 것이다.
