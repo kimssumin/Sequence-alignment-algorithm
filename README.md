@@ -1,5 +1,14 @@
 # <b>🔹 Sequence alignment algorithm의 구현(Dynamic programming)</b>
 
+## 0. 실행방법
+
+### > `npm start` → server 실행 <br> > `localhost:3000` 접속
+
+- 실행결과
+  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/96935132/192218385-94d5dc7c-5f0e-450a-b8ef-5efbf3e29c68.gif)
+
+### >
+
 ## <b>1. Motivation and Objective</b>
 
 > ### <b>A. Motivation</b>
@@ -52,7 +61,7 @@
 > - 구현한 알고리즘은 최적의 alignment 결과를 출력해주며, Protein의 경우 8가지 다른 matrix중에서 가장 좋은 alignment를 선택하여 보여준다.
 > - 알고리즘은 이중 for문을 사용하였기 때문에 O(n^2)의 수행시간을 가진다.
 > - 따라서 입력의 크기가 증가할수록 수행시간도 증가한다.
->   <img src="https://user-images.githubusercontent.com/96935132/149460738-bd38d9b0-0b52-44fd-8d53-e54df75f4965.PNG" width="500" height="250"/>
+>   ![캡처](https://user-images.githubusercontent.com/96935132/149460738-bd38d9b0-0b52-44fd-8d53-e54df75f4965.PNG)
 
 ## <b>7. Conclusion</b>
 
