@@ -5,6 +5,7 @@
 ### > `npm start` → server 실행 <br> > `localhost:3000` 접속
 
 - 실행결과
+  <br>
   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/96935132/192218385-94d5dc7c-5f0e-450a-b8ef-5efbf3e29c68.gif)
 
 ### >
