@@ -8,7 +8,8 @@
   <br>
   ![ezgif com-gif-maker](https://user-images.githubusercontent.com/96935132/192218385-94d5dc7c-5f0e-450a-b8ef-5efbf3e29c68.gif)
 
-### >
+### > html, css 만 check 가능 ▶ https://kimssumin.github.io/Sequence-alignment-algorithm/public/index.html
+<br>> 전체 동작 확인을 위해서는 local 에서 실행해야함
 
 ## <b>1. Motivation and Objective</b>
 
