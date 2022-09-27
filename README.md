@@ -6,7 +6,8 @@
 
 - 실행결과
   <br>
-  ![ezgif com-gif-maker](https://user-images.githubusercontent.com/96935132/192218385-94d5dc7c-5f0e-450a-b8ef-5efbf3e29c68.gif)
+  ![2022-09-27-23-34-27-_online-video-cutter com_](https://user-images.githubusercontent.com/96935132/192558215-4892da83-d7bb-4a50-81c3-7b6001733ffc.gif)
+
 
 ### > html, css 만 check 가능 ▶ https://kimssumin.github.io/Sequence-alignment-algorithm/public/index.html
 ### > 전체 동작 확인을 위해서는 local 에서 실행해야함
