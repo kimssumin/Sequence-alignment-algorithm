@@ -12,9 +12,47 @@
 
 
 <body>
-  <div id="app">
+  <div class="container">
+    <section id="main">
+      <h3>Sequence alignment algorithm</h3>
+      <p>
+        - DNA 와 PROTEIN 중 선택해주세요. -
+      </p>
+      <div id="button1">
+        <button type="button" id="dnaButton" class="btn-xs btn-info" >DNA</button>
+        <button type="button" id="proteinButton" class="btn-xs btn-info ">PROTEIN</button>
+      </div>
+    </section>
+
+    <section id="dna">
+      <form>
+        seq1 : <input type="text" name="dseq1" id="dseq1"><br />
+        seq2 : <input type="text" name="dseq2" id="dseq2"><br />
+        gap score : <input type="text" name="gap_score" id="gap_score"><br />
+        match score : <input type="text" name="match_score" id="match_score"><br />
+        mismatch score : <input type="text" name="mismatch_score" id="mismatch_score"><br />
+        <input type="submit" id="submit" value = "SUBMIT">
+      </form>
+    </section>
+
+    <section id="protein">
+      <form>
+        seq1 : <input type="text" name="pseq1" id="pseq1"><br />
+        seq2 : <input type="text" name="pseq2" id="pseq2"><br />
+        gap opening : <input type="text" name="gap_opening" id="gap_opening"><br />
+        gap extension : <input type="text" name="gap_extension" id="gap_extension"><br />
+        <input type="submit" id="submit" value = "SUBMIT">
+      </form>
+    </section>
+
+    
+      <h3>📄 결과</h3>
+      <div id="result"> </div>
+    
+
+
+    <script type = "module" src='./src/App.js' charset="UTF-8"></script>
   </div>
-  <script type="module" src="./src/App.js"></script>
 </body>
 
 </html>
