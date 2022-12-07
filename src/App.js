@@ -5,16 +5,17 @@ $dnaButton.addEventListener('click', onclickFormStart);
 $proteinButton.addEventListener('click', onclickFormStart);
 
 function onclickFormStart(event) {
+  event.preventDefault();
   switch (event.target.id) {
     case 'dnaButton':
       $dnaForm.style.display = 'block';
       $proteinForm.style.display = 'none';
-      controller.dnaStart();
+      controller.init();
       break;
     case 'proteinButton':
       $proteinForm.style.display = 'block';
       $dnaForm.style.display = 'none';
-      controller.proteinStart();
+      controller.init();
       break;
   }
 }
