@@ -61,7 +61,7 @@ p {
 }
 
 
-#submit {
+#dnasubmit, #proteinsubmit {
   width : 5em;
   font-size : 1em;
   text-align: center;
@@ -85,7 +85,7 @@ input {
   justify-content: center;
 }
 
-#submit:hover {
+#dnasubmit:hover, #proteinsubmit:hover {
   background-color: rgb(36, 37, 39);
   color: white;
 }
