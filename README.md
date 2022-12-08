@@ -1,16 +1,12 @@
 # <b>🔹 Sequence alignment algorithm의 구현(Dynamic programming)</b>
 
-## 0. 실행방법
+## **0. 실행방법**
 
-### > `npm start` → server 실행 <br> > `localhost:3000` 접속
+### `https://kimssumin.github.io/Sequence-alignment-algorithm/index.html` 접속
 
 - 실행결과
   <br>
-  ![2022-09-27-23-34-27-_online-video-cutter com_](https://user-images.githubusercontent.com/96935132/192558215-4892da83-d7bb-4a50-81c3-7b6001733ffc.gif)
-
-
-### > html, css 만 check 가능 ▶ https://kimssumin.github.io/Sequence-alignment-algorithm/public/index.html
-### > 전체 동작 확인을 위해서는 local 에서 실행해야함
+  ![image](https://user-images.githubusercontent.com/96935132/206476491-2535a49e-103f-4da8-aef9-d2a547bff589.png)
 
 ## <b>1. Motivation and Objective</b>
 
