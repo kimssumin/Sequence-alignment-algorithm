@@ -1,6 +1,6 @@
-import { dna } from './model/Calc.js';
+import { dna, protein } from './model/Sequence.js';
 import { $dnasubmit, $proteinsubmit } from './utils/data/Element.js';
-import { $ } from './utils/Utils.js';
+import { dnaForm, proteinForm } from './view/InputView.js';
 
 class Controller {
   constructor() {
@@ -14,15 +14,30 @@ class Controller {
 
   dnaStart(event) {
     event.preventDefault();
-    const seq1 = $('#dseq1').value;
-    const seq2 = $('#dseq2').value;
-    const gap_score = $('#gap_score').value;
-    const match_score = $('#match_score').value;
-    const mismatch_score = $('#mismatch_score').value;
-    console.log(dna(seq1, seq2, gap_score, match_score, mismatch_score));
+    const dnaInputs = dnaForm();
+    console.log(
+      dna(
+        dnaInputs.seq1,
+        dnaInputs.seq2,
+        dnaInputs.gap_score,
+        dnaInputs.match_score,
+        dnaInputs.mismatch_score
+      )
+    );
   }
 
-  proteinStart(event) {}
+  proteinStart(event) {
+    event.preventDefault();
+    const proteinInputs = proteinForm();
+    console.log(
+      protein(
+        proteinInputs.seq1,
+        proteinInputs.seq2,
+        proteinInputs.gap_opening,
+        proteinInputs.gap_extension
+      )
+    );
+  }
 }
 
 export const controller = new Controller();
