@@ -7,11 +7,31 @@ export function createElement(tagName, tagText) {
   return $create;
 }
 
-export function resultElement(seq1, seq2) {
-  return `
-  <h4>Result</h4>
-  <div id = 'main'>
-  <p>${seq1}</p><p>${seq2}</p>
-  </div>
-  `;
+function tdelements(seq) {
+  let td = '';
+  [...seq].forEach((word) => {
+    td += '<td>' + word + '</td>';
+  });
+  return td;
+}
+export function resultElement(inputs, seq1, seq2) {
+  return (
+    `
+    <div id = 'resultBox'>
+    ` +
+    inputs +
+    `
+    <div id = 'main'>
+    <table id = 'resulttbl'>
+    <tr>
+    ` +
+    tdelements(seq1) +
+    `</tr><tr>` +
+    tdelements(seq2) +
+    `</tr>
+    </table>
+    </div>
+    </div>
+    `
+  );
 }
