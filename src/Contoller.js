@@ -1,6 +1,7 @@
 import { dna, protein } from './model/Sequence.js';
 import { $dnasubmit, $proteinsubmit } from './utils/data/Element.js';
 import { dnaForm, proteinForm } from './view/InputView.js';
+import { dnaOutput, proteinOutput } from './view/OutputView.js';
 
 class Controller {
   constructor() {
@@ -15,7 +16,8 @@ class Controller {
   dnaStart(event) {
     event.preventDefault();
     const dnaInputs = dnaForm();
-    console.log(
+    dnaOutput(
+      dnaInputs,
       dna(
         dnaInputs.seq1,
         dnaInputs.seq2,
@@ -29,7 +31,8 @@ class Controller {
   proteinStart(event) {
     event.preventDefault();
     const proteinInputs = proteinForm();
-    console.log(
+    proteinOutput(
+      proteinInputs,
       protein(
         proteinInputs.seq1,
         proteinInputs.seq2,
