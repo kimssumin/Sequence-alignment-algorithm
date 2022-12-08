@@ -164,3 +164,20 @@ span{
   border-radius: 20px;
   justify-content: center;
 }
+
+@media all and (max-width: 760px) {
+  *{
+    font-size : 12px;
+  }
+  #forms{
+    width : 300px;
+    font-size: 13px;
+  }
+  #forms td:nth-child(1) {
+      color: whitesmoke;
+  }
+  [type="text"] {
+      width: 180px;
+      font-size: 12px;
+  }
+}
