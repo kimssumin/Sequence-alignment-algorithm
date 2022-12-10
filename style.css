@@ -24,6 +24,7 @@ h3 {
 
 
 
+
 #dnaButton,
 #proteinButton {
   font-size: 1.1em;
@@ -125,6 +126,9 @@ table{
 [type="text"]{
   width : 28em;
   font-size : 17px;
+}
+[type="text"]::placeholder {
+  color : rgba(87, 87, 91, 0.211);
 }
 
 p {
