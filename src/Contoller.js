@@ -37,15 +37,19 @@ class Controller {
   proteinStart(event) {
     event.preventDefault();
     const proteinInputs = proteinForm();
-    proteinOutput(
-      proteinInputs,
-      protein(
-        proteinInputs.seq1,
-        proteinInputs.seq2,
-        proteinInputs.gap_opening,
-        proteinInputs.gap_extension
-      )
-    );
+    if (!blankCheck(Object.values(proteinInputs))) {
+      alert(ERRORLINE.BLANK);
+    } else {
+      proteinOutput(
+        proteinInputs,
+        protein(
+          proteinInputs.seq1,
+          proteinInputs.seq2,
+          proteinInputs.gap_opening,
+          proteinInputs.gap_extension
+        )
+      );
+    }
   }
 }
 
