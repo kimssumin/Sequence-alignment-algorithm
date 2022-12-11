@@ -4,11 +4,9 @@ function gap(rev_seq1, rev_seq2, gap_opening, gap_extension_penalty, matrix_numb
   let sum_score = 0;
   let gap_open_cnt = 0;
 
-  for (let i = 0; i < rev_seq1.length; i++) {
-    let a = rev_seq1[i];
-    let b = rev_seq2[i];
-
-    if (a == '-' || b == '-') {
+  rev_seq1.forEach((target, i) => {
+    const target_compare = rev_seq2[i];
+    if (target === '-' || target_compare === '-') {
       if (gap_open_cnt != 0) {
         sum_score += parseInt(gap_extension_penalty);
       } else {
@@ -16,12 +14,12 @@ function gap(rev_seq1, rev_seq2, gap_opening, gap_extension_penalty, matrix_numb
         gap_open_cnt = 1;
       }
     } else {
-      let c = matrix_score(a, b, matrix_number);
+      const target_score = matrix_score(target, target_compare, matrix_number);
 
-      sum_score += Number(c);
+      sum_score += Number(target_score);
       gap_open_cnt = 0;
     }
-  }
+  });
   return sum_score;
 }
 
