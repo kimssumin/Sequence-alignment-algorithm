@@ -184,4 +184,20 @@ span{
       width: 180px;
       font-size: 12px;
   }
+
+  span{
+    font-size : 13px;
+  }
+
+  #rst{
+    font-size : 14px;
+  }
+  #resulttbl{
+    width : 80%;
+  }
+
+  #proteinsubmit, #dnasubmit{
+    font-size : 12px;
+    width : 80px;
+  }
 }
