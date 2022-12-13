@@ -4,6 +4,44 @@
   text-align: center;
 }
 
+
+h3 {
+  color: black;
+  font-size: 1.8em;
+  margin : 0px;
+  padding : 20px 0px 25px 0px;
+}
+
+
+p {
+  color: rgb(19, 16, 16);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+span {
+  font-size: 20px;
+  color: rgba(245, 245, 245, 0.848);
+}
+
+input {
+  margin: 5px;
+  border: 0px;
+  border-radius: 5px;
+  color: black;
+  padding: 3px;
+  padding-left: 12px;
+  width: 50%;
+  justify-content: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+  font-size: 20px;
+}
+
 .container {
   font-size: 1.1em;
   margin: auto;
@@ -14,16 +52,6 @@
   justify-content: center;
   border-radius: 10px;
 }
-
-h3 {
-  color: black;
-  font-size: 1.8em;
-  margin : 0px;
-  padding : 20px 0px 25px 0px;
-}
-
-
-
 
 #dnaButton,
 #proteinButton {
@@ -61,6 +89,7 @@ h3 {
 
 
 #dnasubmit, #proteinsubmit {
+  background-color: whitesmoke;
   width : 5em;
   font-size : 1em;
   text-align: center;
@@ -73,16 +102,6 @@ h3 {
   margin-top: 20px;
 }
 
-input {
-  margin: 5px;
-  border: 0px;
-  border-radius: 5px;
-  color: black;
-  padding: 3px;
-  padding-left: 12px;
-  width: 50%;
-  justify-content: center;
-}
 
 #dnasubmit:hover, #proteinsubmit:hover {
   background-color: rgb(36, 37, 39);
@@ -102,12 +121,6 @@ input {
   text-align: center;
 }
 
-table{
-  margin-left : auto;
-  margin-right: auto;
-  width : 15em;
-  font-size : 20px;
-}
 
 #inputtbl td:nth-child(1){
   text-align: left;
@@ -131,16 +144,7 @@ table{
   color : rgba(87, 87, 91, 0.211);
 }
 
-p {
-  color: rgb(19, 16, 16);
-  font-weight: bold;
-  font-size: 20px;
-}
 
-span{
-  font-size: 20px;
-  color :rgba(245, 245, 245, 0.848);
-}
 
 #rst{
   color : whitesmoke;
