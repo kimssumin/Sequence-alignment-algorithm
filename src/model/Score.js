@@ -20,21 +20,21 @@ File.all_files();
 export function matrix_score(amino1, amino2, matrix_num) {
   let a = 0;
   let b = 0;
-  let c = -100000;
-  let str = matrix[matrix_num];
-  for (let i = 1; i < File.all_matrix[str].length; i++) {
-    if (File.all_matrix[str][0][i] == amino1) {
+  const strs = matrix[matrix_num];
+
+  for (let i = 1; i < File.all_matrix[strs].length; i++) {
+    if (File.all_matrix[strs][0][i] == amino1) {
       a = i;
     }
   }
-  for (let i = 1; i < File.all_matrix[str].length; i++) {
-    if (File.all_matrix[str][i][0] == amino2) {
+  for (let i = 1; i < File.all_matrix[strs].length; i++) {
+    if (File.all_matrix[strs][i][0] == amino2) {
       b = i;
     }
   }
-  c = File.all_matrix[str][a][b];
+  const target_score = File.all_matrix[strs][a][b];
 
-  return c;
+  return target_score;
 }
 
 export function score_matrix(seq1, seq2, lseq1, lseq2, gap_opening) {
@@ -74,10 +74,10 @@ export function score_matrix(seq1, seq2, lseq1, lseq2, gap_opening) {
 // score_matrix(seq1, seq2, lseq1,lseq2,-10);
 
 export function direction_matrix(seq1, seq2) {
-  let direction_matrix_2 = Array.from(Array(seq2.length + 2), () =>
+  const direction_matrix_2 = Array.from(Array(seq2.length + 2), () =>
     new Array(seq1.length + 2).fill(0)
   );
-  let direction_matrix = [];
+  const direction_matrix = [];
   for (let i = 0; i < 3; i++) {
     direction_matrix.push(direction_matrix_2);
   }
