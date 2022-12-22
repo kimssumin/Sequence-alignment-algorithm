@@ -1,6 +1,5 @@
 // Protein ver.
 
-//TODO: 수정 - file
 import { files } from '../utils/File.js';
 
 const File = new files();
@@ -63,15 +62,8 @@ export function score_matrix(seq1, seq2, lseq1, lseq2, gap_opening) {
       score_matrix[j][1] = String(a);
     }
   }
-  //console.log(score_matrix)
   return score_matrix;
 }
-
-// let seq1 = 'HEAGAWGHEE'; //나중에 입력으로 수정
-// let seq2 = 'PAWHEAE';
-// let lseq1 = [...seq1];
-// let lseq2 = [...seq2];
-// score_matrix(seq1, seq2, lseq1,lseq2,-10);
 
 export function direction_matrix(seq1, seq2) {
   const direction_matrix_2 = Array.from(Array(seq2.length + 2), () =>
@@ -81,6 +73,5 @@ export function direction_matrix(seq1, seq2) {
   for (let i = 0; i < 3; i++) {
     direction_matrix.push(direction_matrix_2);
   }
-  //console.log(direction_matrix)
   return direction_matrix;
 }
